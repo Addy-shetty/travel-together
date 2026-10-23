@@ -1,0 +1,29 @@
+{
+  "_comment": "Advisories reviewed and accepted. The security check fails on any advisory not listed here and on any entry past reviewBy. See docs/security/threat-model.md.",
+  "advisories": [
+    {
+      "id": "GHSA-vcc3-ghjq-m6fr",
+      "package": "decode-uri-component",
+      "reason": "Runtime, via expo-router -> query-string. Fix requires expo-router 58 (SDK 58 pre-release). Compensated by the deep-link guard in src/app/+native-intent.tsx.",
+      "reviewBy": "2026-12-31"
+    },
+    {
+      "id": "GHSA-vfj7-8cjw-p6xm",
+      "package": "braces",
+      "reason": "Build-time only (Metro bundler file map); not shipped in the app.",
+      "reviewBy": "2026-12-31"
+    },
+    {
+      "id": "GHSA-86w9-cpqp-85rv",
+      "package": "node-forge",
+      "reason": "Build-time only (Expo CLI code signing); not shipped in the app.",
+      "reviewBy": "2026-12-31"
+    },
+    {
+      "id": "GHSA-w5hq-g745-h8pq",
+      "package": "uuid",
+      "reason": "Build-time only (xcode project tooling during prebuild); not shipped in the app.",
+      "reviewBy": "2026-12-31"
+    }
+  ]
+}
